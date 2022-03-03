@@ -1,0 +1,40 @@
+isme java ke program me ham ui create karenge na ki abhi tak wala method jaise ham use karte the terminal
+Note -awt ke program platform dependend hai that is why now we dont use
+
+they are heavery weight
+
+the java.awt packate provied classes for Awt api such as
+
+============================================================================================
+componenet --
+
+# ek area jo screen pe display hoga jaise k button chekcbos
+
+continer-
+
+=========================================================
+panel
+
+===============
+
+window
+
+=====================
+
+fame - sabse pehle ham isi ko create karna shuru karen
+
+two ways to create frame in AWT
+
+1 Inheritence By extending Frame class()
+2 Association By creating the object of frame class()
+
+note this will only apper it will not function it will only function when we use event handling
+
+component
+layout
+event add
+
+===============================================
+AWT controls
+
+1.frame
