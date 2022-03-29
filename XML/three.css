@@ -1,0 +1,13 @@
+MESSAGE {
+  background-color: yellow;
+}
+
+TITLE,
+TO,
+FROM,
+SUBJECT {
+  display: block;
+  color: RED;
+  font-size: 20pt;
+  text-align: left;
+}

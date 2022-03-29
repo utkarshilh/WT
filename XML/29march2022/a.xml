@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE MESSAGE[
+<!ELEMENT MESSAGE (TITLE, TO , FROM ,SUBJECT)>
+<!ELEMENT TITLE (#PCDATA)> 
+<!ELEMENT TO (#PCDATA) > 
+<!ELEMENT FROM (#PCDATA)> 
+<!ELEMENT SUBJECT (#PCDATA)>
+
+]>
+
+
+<MESSAGE>
+<TITLE>BirthDay Wishes</TITLE>
+
+<TO> TO: you@youraddress.com</TO>
+<FROM> From : me@myaddress.com</FROM>
+<SUBJECT>   Subject : Many Many Happy Returns OF the day</SUBJECT>
+
+</MESSAGE>
+ 
+<!-- CDATA 
+option 2 - PCDATA
+                    IS STANDS FOR Parsed character data 
+
+                    pcdata is text that will be parsed by a parser
+
+                    the text will be examined by the parser for entities adn markup 
+                    
+                    tags inside the text will be treated as markup and  -->
+
+
+<!-- internal dtd -->
+
+
+<!-- this is an example of internal dtd  -->
+

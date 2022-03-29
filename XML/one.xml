@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!-- ye root tag hai ek hi hoga -->
+<BOOKCATALOG>
+
+<!-- ISME INFORMATION SAVE KARENGE BOOK NUMBER 1 KI  -->
+<BOOK>
+
+<TITLE> HAPPY SUNDAY</TITLE>
+<AUTHOR> Raj Kumar</AUTHOR>
+<COUNTRY>Sri Lanka</COUNTRY>
+<PRICE>77</PRICE>
+<YEAR>3007</YEAR>
+
+</BOOK>
+ 
+<!-- ISME BOOK 2 KI INFORMATION SAVE KARENGE -->
+ <BOOK>
+
+<TITLE>HAPPY MONDAY</TITLE>
+<AUTHOR>Raj SAJEEVAN</AUTHOR>
+<COUNTRY>Afganistan</COUNTRY>
+<PRICE>77</PRICE>
+<YEAR>2021</YEAR>
+</BOOK>
+
+<!-- ISME BOOK 3 KI INFORMATION SAVE KARENGE  -->
+<!-- <BOOK>
+</BOOK> -->
+
+
+</BOOKCATALOG>
+
