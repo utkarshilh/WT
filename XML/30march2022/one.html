@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function load() {
+        var boj = new XMLHttpRequest();
+        obj.onreadystatechange = function () {
+            if ((boj.readyState == 4) && (obj.status == 200)) {
+                Display(obj);
+
+            }
+        }
+        obj.open("GET", "Example3.xml", true);
+        ob.send();
+
+    }
+
+    function Display(xml) {
+        var data = "<TR><TH>Employee ID</TH><TH>EMPLOYEE NAME</TH> <TH> EMPLOYEE ADDRESS</TH></TR>"
+        var employee = xml.responseXML.getElementByTagName("EMPLOYEE");
+
+        for (var i = 0; i < employee.length; i++) {
+            data = data + "<TR><TD>" + employee[i].getElementByTagName["ID"][0].childNodes[0].nodeValue +
+                "</TD><TD>" +
+                employee[i].getElementByTagName("NAME")[0].childNodes[0].nodeValue +
+                "</TD><TD>" +
+                employee[i].getElementByTagName("ADDRESS")[0].childNodes[0].nodeValue +
+                "</TD></TR>"
+        }
+
+
+    }
+</script>
+
+<body onload="load()">
+    <input type="button" value="search" onclick="search()">
+    <table id="empdetails" border="1">
+
+    </table>
+</body>
+
+</html>

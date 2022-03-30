@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<EMPLOYEE>
+    <EMP>
+        <ID>1</ID>
+        <NAME>ABC</NAME>
+        <ADDRESS>Allahabad</ADDRESS>
+
+
+    </EMP>
+
+    <EMP>
+        <ID>2</ID>
+        <NAME>XYZ</NAME>
+        <ADDRESS>Prayagraj</ADDRESS>
+    </EMP>
+
+    <EMP>
+        <ID>3</ID>
+        <NAME>MON</NAME>
+        <ADDRESS>Lucknow</ADDRESS>
+    </EMP>
+
+</EMPLOYEE>

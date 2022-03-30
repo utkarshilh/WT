@@ -1,1 +1,35 @@
-Q - CREATE A SIMPLE XML DOCUMENT TO STORE THE STUDENT ROLL NUMBER AND THERE HTML PROGRAMS OF TWO STUDENTS
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<STUDENT>
+
+    <RECORED>
+            <ROLLNO>1</ROLLNO>
+            <PROGRAM> 
+            <![CDATA[
+                  <HTML><HEAD><TITLE>MY PROGRAM</TITLE></HEAD><BODY> This is HTML program </BODY></HTML>
+
+
+            ]]>
+                       
+            </PROGRAM>
+
+
+
+
+    </RECORED>
+
+
+    <RECORED>
+        <ROLLNO>2</ROLLNO>
+        <PROGRAM> 
+                  <HTML><HEAD><TITLE>MY program</TITLE> </HEAD> <BODY> 
+                  This is HTML program </BODY></HTML>
+
+        </PROGRAM>
+
+    </RECORED>
+
+
+</STUDENT>
+
+
+<!-- Q - CREATE A SIMPLE XML DOCUMENT TO STORE THE STUDENT ROLL NUMBER AND THERE HTML PROGRAMS OF TWO STUDENTS -->
