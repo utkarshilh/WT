@@ -35,7 +35,32 @@
                 "</TD></TR>"
         }
 
+        document.getElementById("emp details").innerHTML = data;
 
+
+
+    }
+
+    function search(){
+        var obj = new XMLHttpRequest();
+        obj.onreadystatechange= function()
+        {
+            if((obj.readyState ==4) && (obj.status==200))
+            {
+                Find(obj);
+
+            }
+        }
+    }
+    obj.open("GET","one.xml",true);
+    obj.send();
+
+
+    function Find(xml)
+    {
+        var id = document.getElementById("search").value;
+        var data = "<TR><TH>Employee ID </TH><TH> Employee Name</TH> </TR>";
+        var employee = xml.
     }
 </script>
 
