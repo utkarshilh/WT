@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function call() {
+            var v = document.getElementById("u").value;
+            console.log(v);
+            var temp = v * v * v;
+            document.getElementById("res").innerText = temp;
+
+        }
+    </script>
+</head>
+
+<body>
+    <p>Enter any integer</p>
+    <input type="text" value="" id="u">
+    <br>
+    <br>
+    <button onclick="call()">calculate</button>
+    <br>
+    <br>
+    Result<p id="res"></p>
+</body>
+
+</html>
