@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+        function verify() {
+            //Reading values form elements
+            var username = document.getElementById("uname").value;
+            var password = document.getElementById("pass").value;
+
+            if (username.length == 0) {
+                alert("please enter username");
+
+
+                // yahan ham alert dene ke baad uspe click hoke blink kare 
+                // that is done with the help of focus shown below
+
+                document.getElementById("uname").focus();
+                return false;
+
+            }
+            // checking password must not be blank
+
+            if (password.length == 0) {
+
+                alert("please enter password");
+                document.getElementById("pass").focus();
+                return false;
+
+            }
+
+            // checking the password must contains the numbers only
+
+            /* 
+            if (isNaN(password)) {
+                alert("password must be number only");
+                document.getElementById("pass").focus();
+                return false;
+
+            }
+            */
+
+            // setting the passwords length to atleast of 8 character
+
+            if (password.length < 8) {
+                alert("password must contains atleast of 8 character");
+                document.getElementById("pass").focus();
+                return false;
+
+            }
+
+            // username must be a valid email id
+
+            if (username.indexOf('@') == -1) {
+                alert("UserName must have one @ symbol");
+                document.getElementById("uname").focus();
+                return false;
+
+
+            }
+
+            // checking . after @ symbol 
+
+            var atposition = username.indexOf('@');
+            var dotposition = username.lastIndexOf('.');
+            if (atposition > dotposition) {
+                alert("invalid Email Id Format");
+                document.getElementById("uname").focus();
+                return false;
+
+
+
+            }
+
+            //checking the password must containe one lowercase alphabet
+            pattern1 = /[a-z]/g;
+            if (!pattern1.test(password)) {
+                alert("password must have one lowercase ");
+                document.getElementById("pass").focus();
+                return false;
+
+            }
+
+
+
+
+
+            return true;
+
+        }
+
+        function show_hide_pass() {
+            var e = document.getElementById("pass");
+
+            if (e.type === "password")
+                e.type = "text";
+            else
+                e.type = "password";
+        }
+
+        function match_password() {
+            var pass = document.getElementById("pass").value;
+            var cpass = document.getElementById("cpass").value;
+
+            console.log(pass);
+            console.log(cpass)
+            if (cpass == pass) {
+                document.getElementById("passtatus").innerText = "Password Matched";
+
+            }
+            else {
+                document.getElementById("passtatus").innerText = "password does not matched";
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <form method="POST" action="login.jsp" onsubmit="return verify()">
+
+        UserName:
+        <input type="text" name="uname" id="uname"><br>
+        password:
+        <input type="password" name="pass" id="pass"><br>
+        Confirm Password:
+        <input type="password" name="cpass" id="cpass" onkeyup="match_password()">
+        <span id="passtatus"></span>
+        <br>
+        <input type="checkbox" onchange="show_hide_pass()">
+        show password <br>
+
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
