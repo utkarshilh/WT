@@ -1,0 +1,132 @@
+Networking Terminology
+
+1 IP address
+
+It is used to indentify the host on the network using numberical representation
+
+q kaun ip address deta hai
+ans - it is provided by the admin or network admin
+
+quesion - how to check the ip address of host??
+"ipconfig" command is used to check the ip address of host
+
+Types
+
+1. IPV4
+
+- it is 32 bit addressing scheme
+- it takes less memory
+-
+
+2 IPV6
+
+- it is 128 bit addressing scheme
+- it is introduced to handle the IP shortage problem
+-
+
+actually we are trying to connect every device to the internet hence needed more ips that is the reason why ipv6 is introduced
+
+Port Number
+
+- It is used to identify the process or service on the system
+- It 16 bit unsinged number
+- there are 2^16 prot number ie 65536
+- "netstart" command is used to find the n/2 statistics including tcp port
+
+types // important for interview
+
+1 Well Known port number
+
+- its range is 1 to 1023
+- it is assigned by IANA to server services
+
+2 Registered Port number
+
+- It ranges its 1024 to 49151
+- It is registred to specific protocol by software corporation
+
+3
+-its range is 49152 to 65536
+
+- IT can be used by anyone
+-
+
+3 Socket Address
+
+-socket is the communication end point
+
+- socket address is combination of ip address and port number
+
+4 Java InetAddress Class
+
+- It is used to hold the ip address of system/domain.
+
+diagram
+
+     ServerSocket
+        |
+        |
+        |
+        v
+       bind
+        |
+        |
+        |
+        v
+       listen
+        |
+        |
+        |
+        v
+      accept
+        |
+        |
+        |
+        v
+      Read
+        |
+        |
+        |
+        v
+      Write
+        |
+        |
+        |
+        v
+      ckise
+        |
+        |
+        |
+        v
+
+question - data type which stores the ip address
+
+14th april 2022
+
+Echo server usign tcp protocol
+
+server
+
+1. Server Socket
+2. Accept connection
+3. read data from socket
+4. write data into coket
+5. socket close
+
+client
+
+1.create socket 2. writ data into socket 3. read data form socket
+
+15 april 2022
+Math Server
+
+server side
+
+1. Create a serverSocket
+2. Accept New Connection
+3. Read input from socket
+4. convert the string into no
+5. calculate factorial of give no.
+6. convert the result inot stirng
+7. write the result
+   8/ colose the socket
