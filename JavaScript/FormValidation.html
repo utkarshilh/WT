@@ -80,7 +80,21 @@
             }
 
             //checking the password must containe one lowercase alphabet
-            pattern1 = /[a-z]/g;
+            pattern1 = /[a-z]/g; //used to check atleast one lowercase
+            pattern2 = /[A-Z]/g; // used to check atlest one uppercase
+            pattern3 = /[!@#$^&]/g
+            //upper one is used to check one special symbol 
+
+
+
+            pattern4 = /[0-9]/g
+            //used to check atleast one digit
+
+            pattern5 = /[a-z]/i
+            // used to check atlest one alphabet
+
+
+
             if (!pattern1.test(password)) {
                 alert("password must have one lowercase ");
                 document.getElementById("pass").focus();
