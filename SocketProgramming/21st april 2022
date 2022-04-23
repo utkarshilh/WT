@@ -1,0 +1,27 @@
+Connection Less Communication
+
+====================================================================================
+
+Datagram Socket class
+
+- it uses UDP (user Datagram protocol) protocol
+- I is Connection less Communication
+- It does not guarntee dilivery of packets
+- is is faster than TCP
+- If multiple packets are send then they may arrive in any order
+- it does not gurantee content of packets
+
+=====================================================================================
+
+DatagramPacket class
+
+- It is a content container
+- It is used to send and receive message/packets
+
+Costructors of DatagramPacket class
+
+1. DatagramPacket (byte[] buff, int length)
+
+- It is used to receive the packets
+
+2. DatagramPacket(byte[])
