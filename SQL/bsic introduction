@@ -1,0 +1,102 @@
+stored procedures
+
+- Is is used to exeucte group of queries
+- it belongs to a database
+- Sytax :
+  create procedure name()
+  begin
+  query1
+  query2
+  query3
+  end
+
+create procedure name()
+begin
+
+      show databases;
+      show tables;
+      select * from student;
+
+end $$
+
+delimiter ;
+
+to exeucte procedure
+call name();
+
+someting left
+
+==================================================================
+procedures with parameters
+
+delimiter
+
+create procedure p2 (in inputid int)
+begin
+show databases;
+show tables;
+select \* from student where id=1;
+end ##
+
+delimeter;
+
+call p2(1);
+
+create a procedure to find out the total population of usa for year 2020 and find out total poputaion of INdia in 2021 assuming the table country schema as given below
+
+Table Name : coutry
+column name datatype
+CountryId varchar(20)
+population int
+year int
+
+solution ->
+
+delimiter &&
+create procedure p3(IN cid varchar(10),IN year1f int, IN cid2 varchar(10), in year2 int )
+
+begin
+select population from country where countryId = cid and year = year1;
+select poputation from country where countryId = cid2 and year = year2;
+
+end &&
+delimiter ;
+
+call p3('usa' , '202', 'India' , 2021);
+
+create a procedure to fidn the headquarte location of companies microsoft , google , tcs also find the number of staff available in headquarters assuming
+
+3 country varchar(20)
+4 Staff int
+
+
+
+
+
+
+
+
+
+
+
+
+23 april 2022
+
+
+procedure with delimeter 
+
+
+
+transiction
+
+commit
+rollback
+savepoint
+
+set autocommit off;
+
+start transaction;
+
+insert into student(1,"ABC",20)
+insert into student(1,"MNO",10)
+insert into student(1,"XYZ",80)
