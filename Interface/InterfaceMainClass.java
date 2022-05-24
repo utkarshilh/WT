@@ -9,7 +9,7 @@ public class InterfaceMainClass{
 
         System.out.println("perimeter of Rectangle :" + obj1.Perimeter(3f,5f));
 
-        System.out.println("Area of Circle :" + obj2.Area(5.9f,6.6f));
+        System.out.println("Area of Circle :" + obj2.Area(5.9f,5.9f));
 
     }
 }

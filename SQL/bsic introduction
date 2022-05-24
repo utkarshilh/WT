@@ -100,3 +100,10 @@ start transaction;
 insert into student(1,"ABC",20)
 insert into student(1,"MNO",10)
 insert into student(1,"XYZ",80)
+rollback;
+
+
+commit;
+
+
+
