@@ -7,7 +7,7 @@ public class Rectangle implements Shapes{
    
         public float Area(float x, float y)
         {
-            return pi * x * y;
+            return  x * y;
 
         }
 
